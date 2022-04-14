@@ -6,9 +6,10 @@ public class Calculator {
 		System.out.println("Hello Calculator! 2");
 		
 		Addition addNumbers = new Addition();
+		Substraction subNumbers = new Substraction();
 		
 		System.out.println("2+2 is: " + addNumbers.add(2,2));
-
+		System.out.println("2-2 is: " + subNumbers.sub(2,2));
 	}
 
 }
