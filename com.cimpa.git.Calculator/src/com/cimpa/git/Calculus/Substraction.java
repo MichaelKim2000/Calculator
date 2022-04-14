@@ -1,7 +1,8 @@
 package com.cimpa.git.Calculus;
 
-public class Substraction {
-	public int sub(int x, int y) {
+public class Substraction extends Calculate {
+	@Override
+	public int action(int x, int y) {
 		return x-y;
 	}
 }

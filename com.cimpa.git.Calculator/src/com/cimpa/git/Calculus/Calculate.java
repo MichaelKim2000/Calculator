@@ -1,8 +1,9 @@
 package com.cimpa.git.Calculus;
 
-public class Division extends Calculate {
-	@Override
+public class Calculate {
+
 	public int action(int x, int y) {
-		return x/y;
+		return 0;
 	}
+
 }
