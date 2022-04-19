@@ -1,4 +1,9 @@
-package com.cimpa.git.Calculus;
+package com.cimpa.git.calculus;
+
+import com.cimpa.git.calculus.calculator.Addition;
+import com.cimpa.git.calculus.calculator.Calculate;
+import com.cimpa.git.calculus.calculator.Division;
+import com.cimpa.git.calculus.calculator.Substraction;
 
 public class Calculator {
 

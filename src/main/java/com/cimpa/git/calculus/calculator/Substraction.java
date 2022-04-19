@@ -1,4 +1,4 @@
-package com.cimpa.git.Calculus;
+package com.cimpa.git.calculus.calculator;
 
 public class Substraction extends Calculate {
 	@Override

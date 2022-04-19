@@ -1,8 +1,10 @@
-package com.cimpa.git.Calculus;
+package com.cimpa.git.calculus.calculator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import com.cimpa.git.calculus.calculator.Division;
 
 class DivisionTest {
 
