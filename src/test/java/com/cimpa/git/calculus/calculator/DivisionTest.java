@@ -1,9 +1,7 @@
 package com.cimpa.git.calculus.calculator;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
 
 class DivisionTest {
 
@@ -11,7 +9,7 @@ class DivisionTest {
 	
 	@Test
 	void testAction() {
-		assertEquals(3, act.action(4, 2));
+		assertEquals(1, act.action(2, 2));
 	}
 
 }
