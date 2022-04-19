@@ -1,6 +1,6 @@
 node {
     stage('Checkout') { 
-        git branch: 'main', 
+        git branch: 'master', 
             url: 'https://github.com/MichaelKim2000/Calculator.git'
     }
     
