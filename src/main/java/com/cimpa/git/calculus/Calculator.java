@@ -8,17 +8,17 @@ import com.cimpa.git.calculus.calculator.Substraction;
 public class Calculator {
 
 	public static void main(String[] args) {
-		System.out.println("Hello Calculator! 2");			
+		System.out.println("Hello Calculator! 2 and 2 is...");	
 		
-				
-		Addition addNumbers = new Addition();
-		Substraction subNumbers = new Substraction();
-		Calculate divNumbers = new Division();		
+		Calculator calc = new Calculator();		
 		
-		System.out.println("2+2 is: " + addNumbers.action(2,2));
-		System.out.println("2-2 is: " + subNumbers.action(2,2));
-		System.out.println("2/2 is: " + divNumbers.action(2,2));
+		System.out.println("add : " + calc.calculate(new Addition(),2,2));
+		System.out.println("sub : " + calc.calculate(new Substraction(),2,2));
+		System.out.println("div : " + calc.calculate(new Division(),2,2));			
+	}
 
+	public int calculate(Calculate c, int i, int j) {
+		return c.action(i, j);		
 	}
 
 }

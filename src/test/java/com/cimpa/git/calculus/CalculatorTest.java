@@ -14,8 +14,6 @@ class CalculatorTest {
 	@Test
 	void test() {
 
-		Calculator calculator = new Calculator();
-
 		Addition addNumbers = new Addition();
 		Substraction subNumbers = new Substraction();
 		Calculate divNumbers = new Division();

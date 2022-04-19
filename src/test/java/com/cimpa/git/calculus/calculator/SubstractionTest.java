@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.cimpa.git.calculus.calculator.Substraction;
-
 class SubstractionTest {
 	Substraction act = new Substraction();
 

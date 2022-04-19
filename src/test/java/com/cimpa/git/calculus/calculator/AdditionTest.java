@@ -1,19 +1,17 @@
 package com.cimpa.git.calculus.calculator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import com.cimpa.git.calculus.calculator.Addition;
-
-class AdditionTest {
+public class AdditionTest {
 
 	Addition act = new Addition();
 
 	@Test
-	void testAction() {
-		assertEquals(4, act.action(2, 2));
+	public void testAction() {
+		assertEquals(4,	act.action(2, 2));
+		
 	}
 
 }
