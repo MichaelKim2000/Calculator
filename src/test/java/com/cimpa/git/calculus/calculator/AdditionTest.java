@@ -9,8 +9,12 @@ public class AdditionTest {
 
 	@Test
 	public void testAction() {
-		assertEquals(4,	act.action(2, 2));
-		
+		assertEquals(4,	act.action(2, 2));				
+	}
+	
+	@Test
+	public void testAction_withZero() {
+		assertEquals(2,	act.action(0, 2));				
 	}
 
 }
