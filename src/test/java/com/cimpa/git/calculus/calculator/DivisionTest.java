@@ -1,18 +1,16 @@
 package com.cimpa.git.calculus.calculator;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import com.cimpa.git.calculus.calculator.Division;
-
-class DivisionTest {
+public class DivisionTest {
 
 	Division act = new Division();
 	
 	@Test
-	void testAction() {
-		assertEquals(3, act.action(4, 2));
+	public void testAction() {
+		assertEquals(1,	act.action(2, 2));
+		
 	}
-
 }
