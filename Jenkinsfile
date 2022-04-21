@@ -1,11 +1,4 @@
 node {
-
-	agent {
-        docker {
-            image 'maven:3.8.5-jdk-8' 
-            args '-v /root/.m2:/root/.m2' 
-        }
-    }
     
     stage('Checkout') { 
         git branch: 'master', 
@@ -14,9 +7,8 @@ node {
     
     stage('Build') {    	
     
-    	withMaven {
-      		sh "mvn clean verify"
-    	}
+      	sh "mvn clean verify"
+    	
     	//sh 'cd src/main/java'
     	//sh 'pwd'
         //sh 'javac com/cimpa/git/calculus/Calculator.java '
