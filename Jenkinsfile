@@ -5,9 +5,13 @@ node {
     }
     
     stage('Build') {    	
-    	sh 'cd src/main/java'
-    	sh 'pwd'
-        sh 'javac com/cimpa/git/calculus/Calculator.java '
+    
+    	withMaven {
+      		sh "mvn clean verify"
+    	}
+    	//sh 'cd src/main/java'
+    	//sh 'pwd'
+        //sh 'javac com/cimpa/git/calculus/Calculator.java '
 		echo "test jenkins 2"
         //sh 'true'
     }
