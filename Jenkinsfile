@@ -4,9 +4,9 @@ node {
             url: 'git@github.com:MichaelKim2000/Calculator.git'
     }
     
-    stage('Build') {
-    	sh 'pwd'
+    stage('Build') {    	
     	sh 'cd src/main/java'
+    	sh 'pwd'
         sh 'javac com/cimpa/git/calculus/Calculator.java '
 		echo "test jenkins 2"
         //sh 'true'
