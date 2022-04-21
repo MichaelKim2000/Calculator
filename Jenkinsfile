@@ -5,7 +5,9 @@ node {
     }
     
     stage('Build') {
-        sh 'javac -d "src/main/java" com.cimpa.git.calculus.Calculator.java '
+    	sh 'pwd'
+    	sh 'cd src/main/java'
+        sh 'javac com.cimpa.git.calculus.Calculator.java '
 		echo "test jenkins 2"
         //sh 'true'
     }
