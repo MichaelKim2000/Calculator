@@ -1,6 +1,5 @@
 pipeline {
-    
-    
+       
     
     environment {
     	
@@ -16,7 +15,7 @@ pipeline {
         }
     }
 
-    stages {
+  
 	    stage('Checkout') { 
 	        git branch: 'master', 
 	            url: 'git@github.com:MichaelKim2000/Calculator.git'
@@ -38,7 +37,7 @@ pipeline {
 	        archiveArtifacts 'target/*.jar'
 	    }
         
-    }
+    
 
     
 }
