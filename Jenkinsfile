@@ -1,5 +1,12 @@
 node {
     
+    environment {
+    	
+        mavenHome = tool 'JenkinsMaven'
+        PATH = "$PATH:$mavenHome/bin"
+    }
+
+    
     stage('Checkout') { 
         git branch: 'master', 
             url: 'git@github.com:MichaelKim2000/Calculator.git'
