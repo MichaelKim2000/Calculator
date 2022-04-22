@@ -4,10 +4,9 @@ node {
             url: 'git@github.com:MichaelKim2000/Calculator.git'
     }
     
-    stage('Build') {
-	    withMaven {
-	      sh "mvn clean verify"
-	    }
+    stage('Build') {	    
+	    sh "mvn clean verify"
+	    
 	}     	    
       	
     stage('Results') {
