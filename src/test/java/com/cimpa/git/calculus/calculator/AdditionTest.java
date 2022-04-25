@@ -14,7 +14,7 @@ public class AdditionTest {
 	
 	@Test
 	public void testAction_withZero() {
-		assertEquals(3,	act.action(0, 2));				
+		assertEquals(2,	act.action(0, 2));				
 	}
 
 }
