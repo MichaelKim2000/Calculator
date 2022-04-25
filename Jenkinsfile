@@ -24,9 +24,11 @@ pipeline {
     }
     post {   
     	always {
-    		echo 'in post'     
-    		junit '**/target/surefire-reports/*.xml'  
-			archiveArtifacts 'target/*.jar'		    
+    		Steps {  		        		
+	    		echo 'in post'     
+	    		junit '**/target/surefire-reports/*.xml'  
+				archiveArtifacts 'target/*.jar'
+			}		    
     	}
     			   					    
 	    regression  {
