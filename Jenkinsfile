@@ -37,7 +37,7 @@ pipeline {
 	  	fixed {
 	  		steps {
 	  			emailext to: "fixed@email.com",
-				    subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) has been fixed"
+				    subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) has been fixed",
 				    body: "Please go to ${BUILD_URL} and be happy"		  	    
 	  		}
 	  	}			  
