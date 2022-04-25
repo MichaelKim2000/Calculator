@@ -1,13 +1,12 @@
 pipeline {
 	agent any
 	  stages {     	  
-	    stage('Checkout') { 
-	    	/**steps {
+	    /**stage('Checkout') { 
+	    	steps {
 	    		git branch: 'master', 
 	            url: 'git@github.com:MichaelKim2000/Calculator.git'    
-	    	}	
-	    	**/        
-	    }
+	    	}	    	        
+	    }**/
 	    
 	    stage('Build') {
 	    	steps {
