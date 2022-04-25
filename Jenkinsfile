@@ -28,7 +28,7 @@ pipeline {
     			   					    
 	    regression  {
 		    echo "to: regression@email.com"
-		    echo "subject: Job '${JOB_NAME}' (${BUILD_NUMBER}) is facing regression for ${currentBuild.result}"
+		    echo "subject: Job '${JOB_NAME}' (${BUILD_NUMBER}) is facing regression with Status ${currentBuild.result}"
 		    echo "bode: Please go to ${BUILD_URL} and verify the build"		    	
 	  	}
 	  	
