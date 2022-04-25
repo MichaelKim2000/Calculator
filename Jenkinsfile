@@ -2,8 +2,10 @@ pipeline {
 	agent any
 	  stages {     	  
 	    stage('Checkout') { 
-	        git branch: 'master', 
-	            url: 'git@github.com:MichaelKim2000/Calculator.git'
+	    	steps {
+	    		git branch: 'master', 
+	            url: 'git@github.com:MichaelKim2000/Calculator.git'    
+	    	}	        
 	    }
 	    
 	    stage('Build') {	    
@@ -11,9 +13,11 @@ pipeline {
 		    
 		}     	    
 		
-		stage('Test') {	    
-		    	junit '**/target/surefire-reports/*.xml'  
-				archiveArtifacts 'target/*.jar'	    
+		stage('Test') {
+			steps {
+    			junit '**/target/surefire-reports/*.xml'  
+				archiveArtifacts 'target/*.jar'			        
+			}	    		    		    
 		}
 		
 	     	 
