@@ -17,8 +17,7 @@ pipeline {
 		/**
 		stage('Test') {
 			steps {
-    			junit '**/target/surefire-reports/*.xml'  
-				archiveArtifacts 'target/*.jar'			        
+				// do some Selenium Tests						        
 			}	    		    		    
 		}
 		**/
