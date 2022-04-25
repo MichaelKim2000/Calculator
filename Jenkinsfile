@@ -14,16 +14,20 @@ pipeline {
 	    	}
 		}     	    
 		
+		/**
 		stage('Test') {
 			steps {
     			junit '**/target/surefire-reports/*.xml'  
 				archiveArtifacts 'target/*.jar'			        
 			}	    		    		    
 		}
+		**/
     }
     post {   
     	always {
-    		echo 'in post'         
+    		echo 'in post'     
+    		junit '**/target/surefire-reports/*.xml'  
+			archiveArtifacts 'target/*.jar'		    
     	}
     			   					    
 	    regression  {
