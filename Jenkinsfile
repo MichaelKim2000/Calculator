@@ -28,13 +28,19 @@ pipeline {
     			   					    
 	    regression  {
     	   	emailext to: "regression@email.com",
-    			subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) is facing regression with Status ${currentBuild.result}", 
+    			subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) is facing regression with Status: ${currentBuild.result}", 
     			body: "Please go to ${BUILD_URL} and verify the build"  		    			 	    			    		    		    	
 	  	}
 	  	
 	  	fixed {
 	  		emailext to: "fixed@email.com",
 			    subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) has been fixed",
+			    body: "Please go to ${BUILD_URL} and be happy"  	    	  		
+	  	}		
+	  	
+	  	failure {
+	  		emailext to: "failure@email.com",
+			    subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) with Status: ${currentBuild.result}",
 			    body: "Please go to ${BUILD_URL} and be happy"  	    	  		
 	  	}			  
 	}
