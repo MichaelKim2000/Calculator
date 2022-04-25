@@ -10,6 +10,6 @@ public class Addition extends Calculate {
 	@Override
 	public int action(int x, int y) {
 		System.out.println("addition action");
-		return x+y;
+		return x+y+1;
 	}
 }
