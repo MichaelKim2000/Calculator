@@ -19,7 +19,7 @@ class CalculatorTest {
 		Calculate divNumbers = new Division();
 
 		assertAll("Should return good values for calculations", 
-				() -> assertEquals(4, addNumbers.action(2, 2)),
+				() -> assertEquals(3, addNumbers.action(2, 2)),
 				() -> assertEquals(0, subNumbers.action(2, 2)), 
 				() -> assertEquals(1, divNumbers.action(2, 2))
 		);
