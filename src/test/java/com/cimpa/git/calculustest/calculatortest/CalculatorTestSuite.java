@@ -1,4 +1,4 @@
-package com.cimpa.git.calculus.calculator;
+package com.cimpa.git.calculustest.calculatortest;
 
 import org.junit.platform.suite.api.ExcludePackages;
 import org.junit.platform.suite.api.SelectPackages;

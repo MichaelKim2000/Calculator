@@ -14,13 +14,20 @@ pipeline {
 	    	}
 		}     	    
 		
-		/**
-		stage('Test') {
+		
+		stage('Quality') {
 			steps {
-				// do some Selenium Tests						        
+				// do some Sonarqube Tests
+				echo 'true'						        
 			}	    		    		    
 		}
-		**/
+		
+		stage('Functional Test') {
+			steps {
+				// do some Selenium Tests
+				echo 'true'						        
+			}	    		    		    
+		}
     }
     post {   
     	always {    				        		

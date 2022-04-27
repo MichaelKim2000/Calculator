@@ -8,8 +8,7 @@
   <artifactId>Calculator</artifactId>
   <version>1.0.0</version>
 
-  <name>Calculator</name>
-  <!-- FIXME change it to the project's website -->
+  <name>Calculator</name>  
   <url>http://www.example.com</url>
 
   <properties>

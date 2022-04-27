@@ -1,7 +1,9 @@
-package com.cimpa.git.calculus.calculator;
+package com.cimpa.git.calculustest.calculatortest;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import com.cimpa.git.calculus.calculator.Substraction;
 
 class SubstractionTest {
 	Substraction act = new Substraction();

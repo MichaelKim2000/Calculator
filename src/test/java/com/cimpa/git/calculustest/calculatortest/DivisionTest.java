@@ -1,9 +1,11 @@
-package com.cimpa.git.calculus.calculator;
+package com.cimpa.git.calculustest.calculatortest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import com.cimpa.git.calculus.calculator.Division;
 
 class DivisionTest {
 
@@ -16,7 +18,7 @@ class DivisionTest {
 	
 	@Test
 	@DisplayName("Testing NullPointerException")
-	void testAction_divbyZero() {
+	void testActionDivByZero() {
 		Exception exc = assertThrows(ArithmeticException.class, () -> act.action(2, 0));
 		assertEquals("/ by zero",exc.getMessage());
 	}
