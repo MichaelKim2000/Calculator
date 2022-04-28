@@ -6,7 +6,7 @@
 
   <groupId>com.cimpa.git</groupId>
   <artifactId>Calculator</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 
   <name>Calculator</name>  
   <url>http://www.example.com</url>
@@ -42,15 +42,12 @@
         	<artifactId>maven-jar-plugin</artifactId>  
         	<version>${maven-jar-plugin.version}</version> 
 	        <configuration>
-	          <transformers>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <manifestEntries>
-                    <Main-Class>com.cimpa.git.calculus.Calculator</Main-Class>
-                    <Build-Number>${project.version}</Build-Number>
-                  </manifestEntries>
-                </transformer>
-              </transformers>
-	          
+	        	<archive>
+	                <manifest>
+	                    <addClasspath>true</addClasspath>
+	                    <mainClass>com.cimpa.git.calculus.Calculator</mainClass>	                    
+	                </manifest>
+            	</archive>		          
 	        </configuration>        
       	</plugin>     	        
       </plugins>    

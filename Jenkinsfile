@@ -17,15 +17,15 @@ pipeline {
 		
 		stage('Quality') {
 			steps {
-				// do some Sonarqube Tests
-				echo 'true'						        
+				// do some Sonarqube 
+				echo 'Dummy: Sonarqube'						        
 			}	    		    		    
 		}
 		
 		stage('Functional Test') {
 			steps {
-				// do some Selenium Tests
-				echo 'true'						        
+				// do some Selenium 
+				echo 'Dummy: Selenium'						        
 			}	    		    		    
 		}
     }
