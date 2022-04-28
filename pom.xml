@@ -6,7 +6,7 @@
 
   <groupId>com.cimpa.git</groupId>
   <artifactId>Calculator</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.2</version>
 
   <name>Calculator</name>  
   <url>http://www.example.com</url>
@@ -17,6 +17,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <junit.jupiter.version>5.8.1</junit.jupiter.version>
     <junit.platform.version>1.8.1</junit.platform.version>
+    <maven-jar-plugin.version>1.8.1</maven-jar-plugin.version>
   </properties>
 
   <dependencies>
@@ -31,29 +32,27 @@
 	        <artifactId>junit-platform-suite-engine</artifactId>
 	        <version>${junit.platform.version}</version>
 	        <scope>test</scope>
-	    </dependency>
-	    
-	     
+	    </dependency>	    	     
   </dependencies>
-
+  
   <build>    
       <plugins>
         <plugin>
         	<groupId>org.apache.maven.plugins</groupId>        	
         	<artifactId>maven-jar-plugin</artifactId>  
-        	<version>2.4</version> 
+        	<version>${maven-jar-plugin.version}</version> 
 	        <configuration>
-	          <archive>
-	            <manifest>
-	              <addClasspath>true</addClasspath>
-	              <mainClass>com.cimpa.git.calculus.Calculator</mainClass>
-	            </manifest>
-	          </archive>
+	          <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <manifestEntries>
+                    <Main-Class>com.cimpa.git.calculus.Calculator</Main-Class>
+                    <Build-Number>${version}</Build-Number>
+                  </manifestEntries>
+                </transformer>
+              </transformers>
+	          
 	        </configuration>        
-      	</plugin>
-      	
-        
-      </plugins>
-    
+      	</plugin>     	        
+      </plugins>    
   </build>
 </project>

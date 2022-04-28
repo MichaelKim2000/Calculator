@@ -53,6 +53,5 @@ pipeline {
 			    subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) with Status: ${currentBuild.result}",
 			    body: "Please go to ${BUILD_URL} and be happy"  	    	  		
 	  	}			  
-	}
-    
+	}    
 }
