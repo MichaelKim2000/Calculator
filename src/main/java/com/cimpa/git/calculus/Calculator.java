@@ -14,7 +14,7 @@ public class Calculator {
 	
 	public static void main(String[] args) {			
 		
-		logger.info("Hello Calculator! 2 and 2 is...");			
+		logger.info("Hello Calculator 2! 2 and 2 is...");			
 		
 		Calculator calc = new Calculator();		
 		

@@ -2,7 +2,10 @@
 FROM adoptopenjdk:11.0.10_9-jre-hotspot
 RUN useradd app
 USER app
-COPY target/*.jar /Calculator-1.0.3.jar
-CMD ["java", "-jar", "/Calculator-1.0.3.jar"]
+#COPY target/*.jar /Calculator.jar
+ADD target/*.jar /Calculator.jar
+CMD ["java", "-jar", "/Calculator.jar"]
+
+
 
 
