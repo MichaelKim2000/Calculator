@@ -11,9 +11,10 @@ import org.apache.logging.log4j.Logger;
  */
 
 public class Addition extends Calculate {
-	@Override
-	public int action(int x, int y) {
-		Logger logger = LogManager.getLogger(Addition.class);
+	Logger logger = LogManager.getLogger(Addition.class);
+	
+	@Override	
+	public int action(int x, int y) {		
 		logger.debug("parameters x and y: " + x + " and " + y);
 		return x+y;
 	}
