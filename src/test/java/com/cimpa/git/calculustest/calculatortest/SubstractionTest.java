@@ -12,5 +12,10 @@ class SubstractionTest {
 	void testAction() {
 		assertEquals(0, act.action(2, 2));
 	}
+	
+	@Test
+	void testActionWithZero() {
+		assertEquals(0, act.action(0, 0));
+	}
 
 }
