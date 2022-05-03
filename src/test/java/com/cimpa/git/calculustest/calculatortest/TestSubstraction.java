@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import com.cimpa.git.calculus.calculator.Substraction;
 
-class SubstractionTest {
+class TestSubstraction {
 	Substraction act = new Substraction();
 
 	@Test

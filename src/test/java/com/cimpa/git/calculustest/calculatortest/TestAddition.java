@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import com.cimpa.git.calculus.calculator.Addition;
 
-public class AdditionTest {
+public class TestAddition {
 
 	Addition act = new Addition();
 

@@ -15,6 +15,9 @@
         <Logger name="com.cimpa.git.calculus.calculator" level="INFO" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
+        <Logger name="com.cimpa.git.calculus.calculator.Addition" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
     </Loggers>
 
 

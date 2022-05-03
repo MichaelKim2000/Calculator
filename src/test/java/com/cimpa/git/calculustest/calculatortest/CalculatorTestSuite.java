@@ -7,7 +7,7 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 
 
 //@SelectPackages({"com.cimpa.git.calculus.calculator.AdditionTest" 	})
-@SelectPackages({"com.cimpa.git.calculus" })
+//@SelectPackages({"com.cimpa.git.calculus" })
 //@ExcludePackages("com.cimpa.git.calculus.calculator")
 @Suite
 @SuiteDisplayName("Calculator Action Tests")

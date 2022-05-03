@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import com.cimpa.git.calculus.calculator.Division;
 
-class DivisionTest {
+class TestDivision {
 
 	Division act = new Division();
 	
