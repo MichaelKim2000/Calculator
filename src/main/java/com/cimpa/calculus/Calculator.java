@@ -1,4 +1,4 @@
-package com.cimpa.git.calculus;
+package com.cimpa.calculus;
 
 import com.cimpa.git.calculus.calculator.Addition;
 import com.cimpa.git.calculus.calculator.Calculate;

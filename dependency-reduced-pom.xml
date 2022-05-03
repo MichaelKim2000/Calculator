@@ -4,7 +4,7 @@
   <groupId>com.cimpa.git</groupId>
   <artifactId>Calculator</artifactId>
   <name>Calculator</name>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <url>http://www.example.com</url>
   <build>
     <plugins>
@@ -20,7 +20,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.cimpa.git.calculus.Calculator</mainClass>
+                  <mainClass>com.cimpa.calculus.Calculator</mainClass>
                 </transformer>
               </transformers>
             </configuration>

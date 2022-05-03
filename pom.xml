@@ -6,7 +6,7 @@
 
   <groupId>com.cimpa.git</groupId>
   <artifactId>Calculator</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
 
   <name>Calculator</name>  
   <url>http://www.example.com</url>
@@ -75,7 +75,7 @@
 	            <configuration>
 	              <transformers>
 	                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-	                  <mainClass>com.cimpa.git.calculus.Calculator</mainClass>
+	                  <mainClass>com.cimpa.calculus.Calculator</mainClass>
 	                </transformer>
 	              </transformers>
 	            </configuration>
