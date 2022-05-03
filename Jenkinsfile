@@ -28,6 +28,14 @@ pipeline {
 				echo 'Dummy: Selenium'						        
 			}	    		    		    
 		}
+		
+		stage('Docker Build') {
+			steps {
+				// do some Docker 
+				build("calc1.0")						        
+			}	    		    		    
+		}
+		
     }
     post {   
     	always {    				        		
