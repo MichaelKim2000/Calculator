@@ -32,7 +32,7 @@ pipeline {
 		stage('Docker Build') {
 			steps {
 				// do some Docker 
-				build("calc1.0")						        
+				//build("calc1.0")						        
 			}	    		    		    
 		}
 		
