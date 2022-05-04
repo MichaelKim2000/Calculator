@@ -29,7 +29,7 @@ pipeline {
 			}	    		    		    
 		}
 		
-		stage('Docker Build') {
+		stage('Docker Dummy') {
 			steps {
 				// do some Docker 
 				//build("calc")
