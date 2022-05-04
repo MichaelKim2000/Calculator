@@ -16,6 +16,6 @@ public class Addition extends Calculate {
 	@Override	
 	public int action(int x, int y) {		
 		logger.debug("parameters x and y: " + x + " and " + y);
-		return x+y+1;
+		return x+y;
 	}
 }
