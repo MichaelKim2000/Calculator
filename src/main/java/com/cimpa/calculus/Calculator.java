@@ -1,12 +1,12 @@
 package com.cimpa.calculus;
 
-import com.cimpa.git.calculus.calculator.Addition;
-import com.cimpa.git.calculus.calculator.Calculate;
-import com.cimpa.git.calculus.calculator.Division;
-import com.cimpa.git.calculus.calculator.Substraction;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import com.cimpa.calculus.calculator.Addition;
+import com.cimpa.calculus.calculator.Calculate;
+import com.cimpa.calculus.calculator.Division;
+import com.cimpa.calculus.calculator.Substraction;
 
 public class Calculator {
 	

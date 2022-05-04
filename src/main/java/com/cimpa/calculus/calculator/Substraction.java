@@ -1,4 +1,4 @@
-package com.cimpa.git.calculus.calculator;
+package com.cimpa.calculus.calculator;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

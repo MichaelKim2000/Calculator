@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.cimpa.git.calculus.calculator.Addition;
-import com.cimpa.git.calculus.calculator.Calculate;
-import com.cimpa.git.calculus.calculator.Division;
-import com.cimpa.git.calculus.calculator.Substraction;
+import com.cimpa.calculus.calculator.Addition;
+import com.cimpa.calculus.calculator.Calculate;
+import com.cimpa.calculus.calculator.Division;
+import com.cimpa.calculus.calculator.Substraction;
 
 class CalculatorTest {
 

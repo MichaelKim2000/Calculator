@@ -1,4 +1,4 @@
-package com.cimpa.git.calculus.calculator;
+package com.cimpa.calculus.calculator;
 
 public class Calculate {
 
