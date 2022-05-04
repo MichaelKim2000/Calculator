@@ -15,14 +15,14 @@ pipeline {
 		}     	    
 		
 		
-		stage('Quality') {
+		stage('Sonarqube Dummy') {
 			steps {
 				// do some Sonarqube 
 				echo 'Dummy: Sonarqube'						        
 			}	    		    		    
 		}
 		
-		stage('Functional Test') {
+		stage('Selenium Dummy') {
 			steps {
 				// do some Selenium 
 				echo 'Dummy: Selenium'						        
