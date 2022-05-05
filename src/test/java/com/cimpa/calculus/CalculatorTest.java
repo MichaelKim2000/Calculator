@@ -1,4 +1,4 @@
-package com.cimpa.calculustest;
+package com.cimpa.calculus;
 
 import static org.junit.jupiter.api.Assertions.*;
 

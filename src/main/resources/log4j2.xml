@@ -18,6 +18,9 @@
         <Logger name="com.cimpa.calculus.calculator.Addition" level="INFO" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
+        <Logger name="com.cimpa.calculus.calculator.AdditionTest" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
     </Loggers>
 
 
