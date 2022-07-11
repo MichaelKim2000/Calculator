@@ -1,5 +1,7 @@
 package com.cimpa.calculus;
 
+import java.util.Scanner;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,6 +23,15 @@ public class Calculator {
 		logger.info("add : " + calc.calculate(new Addition(),2,2));
 		logger.info("sub : " + calc.calculate(new Substraction(),2,2));
 		logger.info("div : " + calc.calculate(new Division(),2,2));			
+		
+		
+		Scanner myInput = new Scanner( System.in );
+		
+		System.out.println("4+x => enter X: ");
+		int x = myInput.nextInt();
+		
+		
+		System.out.println(calc.calculate(new Addition(), 4, x));
 	}
 
 	public int calculate(Calculate c, int i, int j) {
